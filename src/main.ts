@@ -5,9 +5,12 @@ function Tiles(el: HTMLElement) {
     const tileMatrix = new Array(7).fill(0).map(() => new Array(52).fill(0));
     for (const col of tileMatrix) {
       for (const _ of col) {
+        const tileWrapper = document.createElement("div");
+        tileWrapper.setAttribute("class", "tile-wrapper");
         const tile = document.createElement("div");
         tile.setAttribute("class", "tile");
-        el?.appendChild(tile);
+        tileWrapper.appendChild(tile);
+        el?.appendChild(tileWrapper);
       }
     }
   }

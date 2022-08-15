@@ -42,9 +42,11 @@ h1 {
   display: grid;
   grid-template-columns: repeat(52, 1fr);
   grid-template-rows: repeat(7, 1fr);
+  gap: 6px;
+  padding: 10px;
 }
 
-#activity-widget .tile {
+#activity-widget .tile-wrapper {
   outline: 1px solid green;
 }
 
