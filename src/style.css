@@ -52,6 +52,8 @@ h1 {
 
 #activity-widget .tile-wrapper .tile {
   height: 100%;
+  width: 12px;
+  border-radius: 2px;
 }
 
 button {
